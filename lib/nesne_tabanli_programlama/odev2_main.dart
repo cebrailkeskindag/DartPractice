@@ -19,6 +19,10 @@ void main(){
   int icAciSonuc = o2.icAci(7);
   print("Sonuç: $icAciSonuc");
 
+  int maasSonuc = o2.maasHesapla(20);
+  print("Sonuç: $maasSonuc");
+
+
 
 }
 

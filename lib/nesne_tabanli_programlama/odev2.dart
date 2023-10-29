@@ -38,7 +38,7 @@ class Odev2{
     print(sayac);
   }
 
-// Parametre olarak girilen kenar sayısına göre her bir iç açıyı hesaplayıp sonucu geri gönderen metod yazınız. 
+//5. Parametre olarak girilen kenar sayısına göre her bir iç açıyı hesaplayıp sonucu geri gönderen metod yazınız. 
 //• İç açılar toplamı = ( (Kenar sayısı - 2) x 180 ) / Kenar sayısı
 
   int icAci(int kenar){
@@ -47,8 +47,29 @@ class Odev2{
 
   } 
 
+/*6.  Parametre olarak girilen gün sayısına göre maaş hesabı yapan ve elde edilen değeri döndüren metod yazınız.
+• 1 günde 8 saat çalışılabilir.
+• Çalışma saat ücreti : 40 ₺
+• Mesai saat ücreti : 80 ₺
+• 150 saat üzeri mesai sayılır.*/
 
+int maasHesapla(int gun){
+  int calismaSaati = 8;
+  int saatUcreti = 40;
+  int mesaiUcreti = 80;
+  int kazanc = 0;
 
+  int toplamSaat = gun! * calismaSaati;
+
+  if (toplamSaat > 150) {
+    kazanc += 150 * saatUcreti;
+    int mesaiSaati = toplamSaat - 150;
+    kazanc += mesaiSaati * mesaiUcreti;
+  } else {
+    kazanc += toplamSaat * saatUcreti;
+  }
+  return kazanc;
+}
 
 
 
