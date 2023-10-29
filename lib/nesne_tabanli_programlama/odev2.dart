@@ -73,5 +73,4 @@ int maasHesapla(int gun){
 
 
 
-
 }
