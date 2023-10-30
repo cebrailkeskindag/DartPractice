@@ -72,5 +72,22 @@ int maasHesapla(int gun){
 }
 
 
+ 
+ /* 7. Parametre olarak girilen otopark süresine göre otopark ücreti hesaplayarak geri döndüren metodu 
+yazınız.
+• 1 saat = 50 ₺
+• 1 saat aşımından sonra her 1 saat , 10 ₺’dir. */
+
+int otopark(int sure){
+  int ucret = 50;
+  
+  int toplamOdeme = 1 * ucret;
+
+  if(sure > 1){
+    toplamOdeme += (sure-1) * 10;
+  }
+  return toplamOdeme;
+}
+
 
 }

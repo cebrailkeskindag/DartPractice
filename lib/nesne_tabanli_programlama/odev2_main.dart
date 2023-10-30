@@ -22,7 +22,8 @@ void main(){
   int maasSonuc = o2.maasHesapla(20);
   print("Sonuç: $maasSonuc");
 
-
+  int otoparkSonuc = o2.otopark(6);
+  print("sonuç: $otoparkSonuc");
 
 
 }
