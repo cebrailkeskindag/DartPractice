@@ -1,7 +1,7 @@
 import 'dart:math';
 
 void main() {
-  int sayi = 153;
+  int sayi = 153;//integer değişken tanımlama
   int sayac = 0;
 
   while ( sayi != 0) 
